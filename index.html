@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favIcon.png" type="image/x-icon">
+    
+    <script>
+        var loadVar;
+        
+        function loadFunc() {
+            loadVar = setTimeout(showPage, 2000); // tempo de loading
+        }
+        
+        function showPage() {
+        document.getElementById("loader").style.display = "none";
+        document.getElementById("homeDiv").style.display = "block";
+        }
+
+    </script>
+
+</head>
+<body onload="loadFunc()">
+    <div class="container" id="loader">
+        <div class="box">
+            <img class="logoInic" src="logo/logoInic.png" alt="Logo inicial">
+            <p class="title">BEM VINDO !</p>
+        </div>
+    </div>
+
+    <div style="display:none;" id="homeDiv">
+        <header class="menu">
+            <a href=index.html><img src="logo/logoMenu.png" alt="Logo"></a>
+        </header>
+        <hr>
+        <section>
+            <div class="box">
+                <p class="infor">Informações sobre seu veículo:</p>
+                <label>Placa: </label>
+                <input type="text" class="placa" id="placa" name="placa"/>
+                <label>Modelo: </label>
+                <input type="text" class="placa" id="placa" name="placa"/>
+                <button class="bntEntrar"><b>ENTRAR</button>
+            </div>
+        </section>
+    </div>
+
+</html>
