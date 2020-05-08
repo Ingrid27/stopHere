@@ -6,7 +6,7 @@ html {
 }
 
 .inic {
-    background-image: url(bg/backgroundDesk.png);
+    background-image: url(bg/backgroundDesk.png) !important;
 }
 
 body{
@@ -150,7 +150,7 @@ label{
         font-size: 35px;
     }
     .inic {
-        background-image: url(bg/backgroundDesk.png);
+        background-image: url(bg/backgroundDesk.png) !important;
         background-repeat: round;
     }
     .alert{
