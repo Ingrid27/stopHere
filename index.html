@@ -11,12 +11,30 @@
         var loadVar;
         
         function loadFunc() {
-            loadVar = setTimeout(showPage, 2000); // tempo de loading
+            loadVar = setTimeout(showPage, 1000); // tempo de loading
         }
         
         function showPage() {
         document.getElementById("loader").style.display = "none";
         document.getElementById("homeDiv").style.display = "block";
+        }
+
+        function valida_form (){
+            if(document.getElementById("placa").value == ""){
+                alert('Por favor, informe sua placa!');
+                document.getElementById("placa").focus();
+                return false
+            }
+            else if (document.getElementById("modelo").value == ""){
+                alert('Por favor, informe o modelo!');
+                document.getElementById("modelo").focus();
+                return false
+            }
+            else if (termos.checked == false ){
+                alert('Para continuar é preciso aceitar os Termos de compromisso');
+                return false
+            }
+            else window.location.href = "find.html"
         }
 
     </script>
@@ -32,7 +50,7 @@
 
     <div style="display:none;" id="homeDiv">
         <header class="menu">
-            <a href=index.html><img src="logo/logoMenu.png" alt="Logo"></a>
+            <a href="index.html"><img src="logo/logoMenu.png" alt="Logo"></a>
         </header>
         <hr>
         <section>
@@ -41,8 +59,12 @@
                 <label>Placa: </label>
                 <input type="text" class="placa" id="placa" name="placa"/>
                 <label>Modelo: </label>
-                <input type="text" class="placa" id="placa" name="placa"/>
-                <button class="bntEntrar"><b>ENTRAR</button>
+                <input type="text" class="placa" id="modelo" name="placa"/>
+                <div class="termos" >
+                    <input type="checkbox" id="termos" name="termos"/>
+                    Aceitar os <a href="termos.html">Termos de compromisso</a>
+                </div>
+                <button class="bntEntrar" onclick="valida_form ()"><b>BUSCAR</b></button>
             </div>
         </section>
     </div>

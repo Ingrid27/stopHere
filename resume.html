@@ -8,35 +8,77 @@
     <link rel="shortcut icon" href="favIcon.png" type="image/x-icon">
     
     <title>STOP HERE - TICKET VIRTUAL</title>
+
+    <script>
+            var loadVar;
+            
+            function loadFunc() {
+                loadVar = setTimeout(showPage, 500); // tempo de loading
+            }
+            
+            function showPage() {
+            document.getElementById("indic").style.display = "none";
+            document.getElementById("ticket").style.display = "block";
+            }
+
+    </script>
+    
 </head>
 
-</script>
-
-<body>
+<body onload="loadFunc()">
     <header class="menu">
         <a href=index.html><img src="logo/logoMenu.png" alt="Logo"></a>
     </header>
     <hr>
-    <section>
-        <div class="box">
-            <p>BILHETE VIRTUAL</p>
-            <p>Sua vaga:</p>
-            <p>Placa:</p>
-            <span></span>
-            <p>Veículo:</p>
-            <span></span>
-            <p>Tempo:</p>
-            <span></span>
-            <p>Valor:</p>
-            <span></span>
-            <button class="bntEntrar"><b>ENCERRAR</button>
 
-        </div>
+    <div id="indic">
+        <section>
+            <div class="box">
+                <p class="tAlert"><b>Dirija-se até sua vaga</p>
             
-    </section>
-    <div class="rodp">
-        <p>Funcionamento - 8:00 ás 22:00</p>
+            </div>
+                
+        </section>
+        <div class="rodp">
+            <p>Por favor, é importante que estacione na 
+            vaga indicada para não prejudicar outros 
+            motoristas!</p>
+        </div>
+    </div> 
+
+    <div style="display:none;" id="ticket"> 
+        <section>
+            <div class="box">
+                <p>TICKET VIRTUAL</p>
+                <div class="spaceTick">
+                    <p>Sua vaga:</p>
+                    <div class="spanDiv"><span style="vertical-align: sub">2</span></div>
+                </div>
+                <div class="spaceTick">
+                    <p>Placa:</p>
+                    <div class="spanDiv"><span style="vertical-align: sub">XXX-123</span></div>
+                </div>
+                <div class="spaceTick">
+                    <p>Modelo:</p>
+                    <div class="spanDiv"><span style="vertical-align: sub">XXXXX</span></div>
+                </div>
+                <div class="spaceTick">
+                    <p>Tempo:</p>
+                    <div class="spanDiv"><spanstyle="vertical-align: sub">00:00:00</span></div>
+                </div>
+                <div class="spaceTick">
+                    <p>Valor:</p>
+                    <div class="spanDiv"><span style="vertical-align: sub">R$ 00,00</span></div>
+                </div>
+                <button class="bntEntrar mb40"><b>ENCERRAR</button>
+            </div>
+                
+        </section>
+        <div class="rodp">
+            <p>Funcionamento - 8:00 ás 22:00 <br/> <b>Ao clicar em encerrar,  a cancela abrirá por 1 minuto.</b></p>
+        </div>
     </div>
+
 </body>
 
 </html>

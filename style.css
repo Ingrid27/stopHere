@@ -138,6 +138,39 @@ label{
     margin: 0;
 }
 
+.mb40 {
+    margin-bottom: 40px;
+}
+.spanDiv {
+    background-color: #191b1a;
+    border: #fff 2px solid;
+    border-radius: 12px;
+    height: 40px;
+    width: 150px;
+    align-self: center;
+    text-align: center;
+    font-size: 25px;
+}
+.spaceTick{
+    display: inline-flex;
+    width: 23%;
+    justify-content: space-between;
+}
+.termos{
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.termos a {
+    color: #fff !important;
+}
+
+.parag{
+    font-size: 17px;
+    margin: 0 10% 0 10%;
+    text-align: justify;
+}
+
 
 /* ////////////////////////////////////// RESPONSIVE /////////////////////////////////// */
 
@@ -169,6 +202,22 @@ label{
         text-align: center;
         font-size: 15px;
     }
+    .spaceTick{
+        display: inline-flex;
+        width: 85%;
+        justify-content: space-between;
+        font-size: 25px;
+    }
+    .spanDiv {
+        background-color: #191b1a;
+        border: #fff 2px solid;
+        border-radius: 12px;
+        height: 40px;
+        width: 150px;
+        align-self: center;
+        text-align: center;
+        font-size: 25px;
+    }
     
 }
 
@@ -179,11 +228,17 @@ label{
     p{
         margin: 20px 20px;
     }
+    .termos{
+        font-size: 18px;
+    }
 }
 
 @media (max-width: 320px) {
     .title{
         font-size: 25px;
+    }
+    .termos{
+        font-size: 15px;
     }
 }
 

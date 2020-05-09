@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html>
 <head>
     <meta charset="UTF-8">
@@ -8,9 +8,13 @@
     <link rel="shortcut icon" href="favIcon.png" type="image/x-icon">
     
     <title>STOP HERE</title>
-</head>
 
-</script>
+    <script>
+        function proxPag(){
+            window.location.href = "resume.html"
+        }
+    </script>
+</head>
 
 <body>
     <header class="menu">
@@ -23,7 +27,7 @@
         <div class="box">
             <img src="logo/found.png" class="alert">
             <p class="tAlert"><b>Vaga encontrada!</p>
-            <button class="bntEntrar"><b>ENTRAR</button>
+            <button class="bntEntrar mb40" onclick="proxPag()"><b>ABRIR</button>
         </div>
         
         <!--
@@ -38,6 +42,9 @@
         -->
         
     </section>
+    <div class="rodp">
+        <p>Clique no botão ABRIR para entrar, a cancela abrirá por 1 minuto.</b></p>
+    </div>
 </body>
 
 </html>
