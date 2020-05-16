@@ -122,7 +122,7 @@ label{
 }
 
 .tAlert{
-    margin: 10px 0 35px 0;
+    margin: 35px 0 20px 0;
     font-size: 40px;
     text-align: center;
 }
@@ -166,9 +166,98 @@ label{
 }
 
 .parag{
-    font-size: 17px;
+    font-size: 20px;
     margin: 0 10% 0 10%;
     text-align: justify;
+    word-wrap: break-word;
+    LINE-HEIGHT: 30px;
+    width: 50%;
+}
+
+
+/* ////////////////////////////////////// MAP VAGAS /////////////////////////////////// */
+
+.unit{
+    width: 150px;
+    height: 90px;
+    border: 3px solid;
+    margin: 20px 0;
+    writing-mode: vertical-lr;
+    direction: ltr;
+}
+
+.rot{
+    transform: rotate(180deg);
+    padding-top: 10px;
+    font-weight: bold;
+}
+
+.unitDir{
+    width: 150px;
+    height: 90px;
+     border: 3px solid;
+     margin: 20px 0;
+     writing-mode: vertical-rl;
+     direction: ltr;
+ }
+
+.unitDir div{
+    padding-top: 10px;
+    font-weight: bold;
+}
+
+.unitMeio{
+    height: 107.2px;
+    width: 20px;
+    border: 1px solid;
+}
+
+
+.map {
+    display: flex;
+}
+
+.mt20{
+    margin-top: 20px;
+}
+.mb20{
+    margin-bottom: 20px;
+}
+
+.mr25{
+    margin-right: 25px;
+}
+
+.ml25{
+    margin-left: 25px;
+}
+
+.mt30{
+    margin-top: 30px;
+}
+
+.rotate{
+    transform: rotate(270deg);
+}
+
+.flex{
+    display: flex;
+    margin-top: 20px;
+}
+
+.unit img{
+    width: 75px;
+    transform: rotate(-90deg);
+    margin: 9px 0 0 20px;
+}
+
+.unitDir img{
+    width: 75px;
+    transform: rotate(90deg);
+    margin: 9px 20px 0;
+}
+.meio{
+    margin: 0 25px;
 }
 
 
@@ -218,7 +307,11 @@ label{
         text-align: center;
         font-size: 25px;
     }
-    
+    .parag{
+        font-size: 19px;
+        LINE-HEIGHT: 25px;
+        width: 80%;
+    }
 }
 
 @media (max-width: 375px) {
@@ -231,6 +324,28 @@ label{
     .termos{
         font-size: 18px;
     }
+
+    .unit {
+        width: 120px;
+        height: 90px;
+    }
+    .unit img{
+        margin: 9px 0 0 1px;
+    }
+    .meio{
+        margin: 0 15px;
+    }
+    .unitMeio{
+        width: 10px;
+    }
+    .unitDir {
+        width: 120px;
+        height: 90px;
+    }
+    .unitDir img{
+        margin: 9px 1px 0;
+    }
+
 }
 
 @media (max-width: 320px) {
